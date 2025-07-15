@@ -12,6 +12,7 @@ target/
 *.iml
 *.ipr
 .ProyectoAWS\clave.env
+clave.env
 
 ### Eclipse ###
 .apt_generated
