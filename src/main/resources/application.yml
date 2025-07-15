@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+aws:
+  s3:
+    bucket-name: mi-file-server-bucket-jdelgado-tecdesofware
+    region: us-east-1
+  access-key: ${AWS_ACCESS_KEY_ID}
+  secret-key: ${AWS_SECRET_ACCESS_KEY}
+
+
+
+
+file:
+  upload:
+    max-size: 10MB
+    allowed-types: jpg,jpeg,png,pdf,txt,doc,docx,zip
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+logging:
+  level:
+    org.example: DEBUG
+    software.amazon.awssdk: INFO
